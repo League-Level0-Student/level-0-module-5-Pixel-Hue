@@ -56,11 +56,39 @@ public class LoopGauntlet {
 			for(int j = 1; j < 4; j++) {
 				System.out.println(i + " " + j);
 			}
-			for (int n = 0; n < 1; n++) {
+		}
+		System.out.println("______________________________");
+		int num = 1;
+			for (int n = 1; n < 4; n++) {
 				
+				for (int m = 0; m < 3; m++) {
+					System.out.print(num + " ");
+					num++;
+				}
+				System.out.println("");
 			}
-			
+			System.out.println("_____________________________");
+			int numb = 1;
+			for (int z = 1; z < 11; z++) {
+				
+				for (int s = 0; s < 10; s++) {
+					System.out.print(numb + " ");
+					numb++;
+				}
+				System.out.println("");
+			}
+			System.out.println("_____________________________");
+			int numc = 1;
+for (int z = 1; z < 7; z++) {
+				
+				for (int s = 0; s < numc; s++) {
+					System.out.print("*");
+					
+				}
+				numc++;
+				System.out.println("");
+			}
 		}
 		
 	}
-}
+
