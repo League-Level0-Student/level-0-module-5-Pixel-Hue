@@ -7,15 +7,24 @@ import javax.swing.JOptionPane;
 import org.jointheleague.graphical.robot.Robot;
 
 public class ReturnTypesAdvanced {
-	static Robot rob = new Robot();
+	static Robot rob = new Robot("mini");
 	
 	public static void main(String[] args) {
+		rob.moveTo(150, 351);
 		//1. Ask the user how many sides they want their shape to be
-		
+		String e = JOptionPane.showInputDialog("How many shapes do you want your shape to be?");
 		//2. Call canMakeShape() and save what is returned into a variable
-		
+		int g = Integer.parseInt(e);
 		//3. If the shape CAN be drawn
-		
+		boolean a = canMakeShape(g);
+		if (a == true) {
+			int m = calculateTurnAngle(g);
+			drawPolygon(g, m);
+		}
+		else {
+			String ePeriod = notEnoughSides();
+			JOptionPane.showMessageDialog(null, ePeriod);
+		}
 			//4. Call and save what is returned from calculateTurningAngle()
 		
 			//5. Use drawPolygon() to draw your shape
