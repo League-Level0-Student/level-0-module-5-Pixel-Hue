@@ -15,6 +15,7 @@ public class ReturnTypesAdvanced {
 		String e = JOptionPane.showInputDialog("How many shapes do you want your shape to be?");
 		//2. Call canMakeShape() and save what is returned into a variable
 		int g = Integer.parseInt(e);
+		
 		//3. If the shape CAN be drawn
 		boolean a = canMakeShape(g);
 		if (a == true) {
